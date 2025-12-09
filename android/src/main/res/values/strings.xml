@@ -2,32 +2,32 @@
 <resources>
 
     <!-- Generic Strings -->
-    <string name="log_in">Log in</string>
-    <string name="log_out">Log out</string>
+    <string name="log_in">登陆</string>
+    <string name="log_out">登出</string>
     <string name="none">None</string>
-    <string name="connect">Connect</string>
-    <string name="disconnect">Disconnect</string>
-    <string name="unknown_user">Unknown user</string>
-    <string name="connected">Connected</string>
-    <string name="using_exit_node">Using exit node (%s)</string>
-    <string name="not_connected">Not connected</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">已断开</string>
+    <string name="unknown_user">未知用户</string>
+    <string name="connected">已连接</string>
+    <string name="using_exit_node">正在使用出口节点 (%s)</string>
+    <string name="not_connected">未连接</string>
     <string name="empty" translatable="false"> </string>
     <string name="template" translatable="false">%s</string>
-    <string name="selected">Selected</string> 
-    <string name="offline">Offline</string>
-    <string name="ok">OK</string>
-    <string name="_continue">Continue</string>
-    <string name="warning">Warning</string>
-    <string name="search">Search</string>
-    <string name="search_ellipsis">Search...</string>
-    <string name="dismiss">Dismiss</string>
-    <string name="no_results">No results</string>
-    <string name="back">Back</string>
-    <string name="clear_search">Clear search</string>
-    <string name="off">Off</string>
-    <string name="on">On</string>
-    <string name="try_again">Try again</string>
-    <string name="cancel">Cancel</string>
+    <string name="selected">已选择</string> 
+    <string name="offline">离线</string>
+    <string name="ok">确定</string>
+    <string name="_continue">继续</string>
+    <string name="warning">警告</string>
+    <string name="search">搜索</string>
+    <string name="search_ellipsis">搜索...</string>
+    <string name="dismiss">忽略</string>
+    <string name="no_results">无结果</string>
+    <string name="back">返回</string>
+    <string name="clear_search">清除搜索</string>
+    <string name="off">关闭</string>
+    <string name="on">开启</string>
+    <string name="try_again">重试</string>
+    <string name="cancel">取消</string>
 
     <!-- Strings for the about screen -->
     <string name="app_name" translatable="false">Tailscale</string>
@@ -49,42 +49,42 @@
     <string name="bug_report_id_desc">This ID helps us find the event in our diagnostic logs. This process does not share any of your personally-identifiable information.</string>
 
     <!-- Strings for the settings screen -->
-    <string name="settings_title">Settings</string>
-    <string name="settings_admin_prefix">"Manage your tailnet settings in the "</string>
-    <string name="settings_admin_link">admin console</string>
-    <string name="about_tailscale">About Tailscale</string>
-    <string name="bug_report">Bug report</string>
-    <string name="use_ts_dns">Use Tailscale DNS</string>
+    <string name="settings_title">设置</string>
+    <string name="settings_admin_prefix">"管理你的 tailnet 设置： "</string>
+    <string name="settings_admin_link">管理控制台</string>
+    <string name="about_tailscale">关于 Tailscale</string>
+    <string name="bug_report">报告Bug</string>
+    <string name="use_ts_dns">使用 Tailscale DNS</string>
     <string name="internal_debug_options">Internal debug options</string>
 
     <!-- Strings for the main screen -->
-    <string name="exit_node">EXIT NODE</string>
-    <string name="exit_node_offline">EXIT NODE OFFLINE</string>
-    <string name="running_exit_node">Running on this device</string>
-    <string name="exit_node_offline_mdm_orgname">The exit node selected by %1$s is currently offline. Internet traffic is blocked. Contact a network administrator for help.</string>
+    <string name="exit_node">出口节点</string>
+    <string name="exit_node_offline">出口节点已离线</string>
+    <string name="running_exit_node">在此设备上运行</string>
+    <string name="exit_node_offline_mdm_orgname"> %1$s 选择的出口节点现在处于离线状态， 网络连接将被阻断， 请联系网络管理员。</string>
     <string name="exit_node_offline_mdm">The exit node selected by your organization is currently offline. Internet traffic is blocked. Contact a network administrator for help.</string>
-    <string name="starting">Starting…</string>
-    <string name="connect_to_tailnet_prefix">"Connect again to talk to the other devices in the "</string>
+    <string name="starting">正在启动...</string>
+    <string name="connect_to_tailnet_prefix">"再次连接到Tailnet： "</string>
     <string name="connect_to_tailnet_suffix">" tailnet."</string>
-    <string name="welcome_to_tailscale">Welcome to Tailscale</string>
-    <string name="login_to_join_your_tailnet">Log in to join your tailnet and connect your devices.</string>
-    <string name="give_permissions">Set up a VPN connection so you can start using Tailscale.</string>
-    <string name="keyExpiryExplainer">Reauthenticate to remain connected to Tailscale.</string>
-    <string name="deviceKeyNeverExpires">Device key does not expire</string>
-    <string name="deviceKeyExpires">Device key expires %s</string>
-    <string name="deviceKeyExpired">Device key expired %s</string>
-    <string name="machine_auth_required">Admin approval required</string>
-    <string name="machine_auth_explainer">This device must be approved by an administrator before it can connect to the tailnet.</string>
-    <string name="open_admin_console">Open admin console</string>
-    <string name="needs_machine_auth">Authorization required</string>
-    <string name="disable">Disable</string>
-    <string name="enable">Enable</string>
-    <string name="stop">Stop</string>
+    <string name="welcome_to_tailscale">欢迎使用 Tailscale</string>
+    <string name="login_to_join_your_tailnet">登陆后你就可以加入Tailnet并与其他设备通信。</string>
+    <string name="give_permissions">为了使Tailscale正常工作，你需要开启VPN功能。</string>
+    <string name="keyExpiryExplainer">为了继续使用Tailscale，请重新登陆</string>
+    <string name="deviceKeyNeverExpires">此设备的密钥不会过期。</string>
+    <string name="deviceKeyExpires">设备密钥的过期时间： %s</string>
+    <string name="deviceKeyExpired">设备密钥已过期： %s</string>
+    <string name="machine_auth_required">需要管理员授权</string>
+    <string name="machine_auth_explainer">在连接到Tailnet之前，需要管理员授权</string>
+    <string name="open_admin_console">打开管理控制台</string>
+    <string name="needs_machine_auth">需要验证</string>
+    <string name="disable">禁用</string>
+    <string name="enable">启用</string>
+    <string name="stop">停止</string>
 
     <!-- Strings for peer details -->
-    <string name="os">OS</string>
-    <string name="key_expiry">Key expiry</string>
-    <string name="tailscale_addresses">Tailscale addresses</string>
+    <string name="os">系统</string>
+    <string name="key_expiry">密钥期限</string>
+    <string name="tailscale_addresses">Tailscale地址</string>
 
     <!-- Strings for MDM settings -->
     <string name="current_mdm_settings">Current MDM settings</string>
@@ -96,48 +96,48 @@
 
     <!-- State strings -->
     <string name="placeholder" translatable="false">--</string>
-    <string name="please_login">Login required</string>
-    <string name="stopped">Not connected</string>
-    <string name="connect_to_vpn">Connect to VPN</string>
+    <string name="please_login">需要登陆</string>
+    <string name="stopped">未连接</string>
+    <string name="connect_to_vpn">连接到VPN</string>
 
     <!-- Time conversion templates -->
-    <string name="under_a_minute">under a minute</string>
-    <string name="in_x_minutes">in %d minutes</string>
-    <string name="in_x_hours">in %d hours</string>
-    <string name="in_x_days">in %d days</string>
-    <string name="in_x_months">in %d months</string>
-    <string name="in_x_years">in %.1f years</string>
+    <string name="under_a_minute">少于1分钟</string>
+    <string name="in_x_minutes"> %d 分钟内</string>
+    <string name="in_x_hours"> %d 小时内</string>
+    <string name="in_x_days"> %d 天内</string>
+    <string name="in_x_months"> %d 个月内</string>
+    <string name="in_x_years"> %.1f 年</string>
 
-    <string name="ago_x_minutes">%d minutes ago</string>
-    <string name="ago_x_hours">%d hours ago</string>
-    <string name="ago_x_days">%d days ago</string>
-    <string name="ago_x_months">%d months ago</string>
-    <string name="ago_x_years">%.1f years ago</string>
+    <string name="ago_x_minutes">%d 分钟以前</string>
+    <string name="ago_x_hours">%d 小时以前</string>
+    <string name="ago_x_days">%d 天前</string>
+    <string name="ago_x_months">%d 个月前</string>
+    <string name="ago_x_years">%.1f 年前</string>
 
     <!-- Strings for the user switcher -->
-    <string name="logout_failed">Unable to logout at this time. Please try again.</string>
-    <string name="error">Error</string>
-    <string name="accounts">Accounts</string>
-    <string name="add_account">Add another account</string>
-    <string name="add_account_short">Add account</string>
-    <string name="reauthenticate">Reauthenticate</string>
-    <string name="switch_user_failed">Unable to switch users. Please try again.</string>
-    <string name="add_profile_failed">Unable to add a new profile. Please try again.</string>
-    <string name="invalidCustomUrl">Please enter a valid URL in the form https://server.com</string>
-    <string name="invalidCustomURLTitle">Invalid URL</string>
-    <string name="custom_control_menu">Use an alternate server</string>
-    <string name="custom_control_menu_desc">Enter the URL of an alternate Tailscale server or your self-hosted Headscale server.</string>
+    <string name="logout_failed">目前无法登出，请稍后重试</string>
+    <string name="error">错误</string>
+    <string name="accounts">账户</string>
+    <string name="add_account">登陆到另一个账户</string>
+    <string name="add_account_short">添加账户</string>
+    <string name="reauthenticate">重新鉴权</string>
+    <string name="switch_user_failed">目前无法切换用户，请稍后再试</string>
+    <string name="add_profile_failed">无法添加新的配置文件，请稍后再试</string>
+    <string name="invalidCustomUrl">请在框内输入有效的URL： https://server.com</string>
+    <string name="invalidCustomURLTitle">非法 URL</string>
+    <string name="custom_control_menu">使用自定义服务器</string>
+    <string name="custom_control_menu_desc">输入额外的 Tailscale 服务器地址或您自己托管的 Headscale 服务器地址</string>
     <string name="custom_control_placeholder" translatable="false">https://my.custom.server.com</string>
-    <string name="auth_key_menu">Use an auth key</string>
-    <string name="auth_key_title">Add an account using an auth key</string>
-    <string name="auth_key_explanation">Enter a valid auth key generated by the Tailscale admin console</string>
+    <string name="auth_key_menu">使用预鉴权密钥</string>
+    <string name="auth_key_title">使用预鉴权密钥添加账户</string>
+    <string name="auth_key_explanation">请输入有效的鉴权密钥，请到Tailscale控制台生成。</string>
     <string name="auth_key_placeholder">ie: tskey-auth-mYta1ln3tCNTRL-s3cr3tauthk3yFr0madM1n</string>
-    <string name="invalidAuthKey">The provided auth key is not in the correct format.</string>
-    <string name="invalidAuthKeyTitle">Invalid key</string>
-    <string name="custom_control_url_title">Custom control server URL</string>
-    <string name="auth_key_input_title">Auth key</string>
-    <string name="delete_tailnet">Delete tailnet</string>
-    <string name="contact_support">Contact support</string>
+    <string name="invalidAuthKey">提供的鉴权密钥格式不正确</string>
+    <string name="invalidAuthKeyTitle">非法的密钥</string>
+    <string name="custom_control_url_title">自定义服务器地址</string>
+    <string name="auth_key_input_title">鉴权密钥</string>
+    <string name="delete_tailnet">删除Tailnet</string>
+    <string name="contact_support">获取帮助</string>
     <string name="request_deletion_nonowner">All requests related to the removal or deletion of data are handled by our Support team. To open a request, tap the Contact Support button below to be taken to our contact form in the browser. Complete the form, and a Customer Support Engineer will work with you directly to assist.</string>
     <string name="request_deletion_owner_part1">
     As the owner of this tailnet, to remove yourself from the tailnet you can either reassign ownership and contact our Support team, or delete the whole tailnet through the admin console. To do the latter, go to
@@ -151,11 +151,11 @@
 </string>
 
     <!-- Strings for ExitNode picker -->
-    <string name="choose_exit_node">Choose exit node</string>
+    <string name="choose_exit_node">选择出口节点</string>
     <string name="choose_mullvad_exit_node">Mullvad exit nodes</string>
     <string name="mullvad_exit_nodes" translatable="false">Mullvad VPN</string>
     <string name="best_available">Best available</string>
-    <string name="run_as_exit_node">Run as exit node</string>
+    <string name="run_as_exit_node">声明自己是出口节点</string>
     <string name="run_this_device_as_an_exit_node">Run as exit node?</string>
     <string name="run_exit_node_explainer">Other devices in your tailnet will be able to route their internet traffic through this Android device. Make sure to approve this exit node in the admin console in order for other devices to see it.</string>
     <string name="run_exit_node_caution">Running an exit node will severely impact battery life. On a metered data plan, significant cellular data charges may also apply. Always disable this feature when no longer needed.</string>
@@ -163,8 +163,8 @@
     <string name="start_running_as_exit_node">Run as exit node</string>
     <string name="running_as_exit_node">Now running as exit node</string>
     <string name="run_exit_node_explainer_running">Other devices in your tailnet can now route their internet traffic through this Android device. Make sure to approve this exit node in the admin console in order for other devices to see it.</string>
-    <string name="enabled">Enabled</string>
-    <string name="disabled">Disabled</string>
+    <string name="enabled">已启用</string>
+    <string name="disabled">已禁用</string>
     <string name="exit_node_mdm_orgname">%1$s requires you to use an exit node.</string>
     <string name="exit_node_mdm">Your organization requires you to use an exit node.</string>
 
@@ -188,16 +188,16 @@
     <string name="learn_more">Learn more</string>
 
     <!-- Strings for DNS settings -->
-    <string name="dns_settings">DNS settings</string>
-    <string name="using_tailscale_dns">Using Tailscale DNS</string>
-    <string name="this_device_is_using_tailscale_to_resolve_dns_names">This device is using Tailscale to resolve DNS names.</string>
-    <string name="resolvers">Resolvers</string>
+    <string name="dns_settings">DNS 设置</string>
+    <string name="using_tailscale_dns">使用 Tailscale DNS</string>
+    <string name="this_device_is_using_tailscale_to_resolve_dns_names">此设备正在使用 Tailscale 解析域名</string>
+    <string name="resolvers">解析器</string>
     <string name="search_domains">Search domains</string>
-    <string name="not_running">Not running</string>
+    <string name="not_running">未运行</string>
     <string name="tailscale_is_not_running_this_device_is_using_the_system_dns_resolver">Tailscale is not running. This device is using the system\'s DNS resolver.</string>
     <string name="this_device_is_using_the_system_dns_resolver">This device is using the system DNS resolver.</string>
-    <string name="not_using_tailscale_dns">Not using Tailscale DNS</string>
-    <string name="allow_lan_access">Allow LAN access</string>
+    <string name="not_using_tailscale_dns">不使用 Tailscale DNS</string>
+    <string name="allow_lan_access">允许局域网访问</string>
     <string name="countries">countries</string>
     <string name="cities_available">cities available</string>
 
