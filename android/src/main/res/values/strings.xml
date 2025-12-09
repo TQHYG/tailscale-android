@@ -33,7 +33,7 @@
     <string name="app_name" translatable="false">Tailscale</string>
     <string name="tile_name" translatable="false">Tailscale</string>
     <string name="version">Version</string>
-    <string name="about_view_header">About Tailscale</string>
+    <string name="about_view_header">关于 Tailscale</string>
     <string name="about_view_title">Tailscale for Android</string>
     <string name="acknowledgements">Acknowledgements</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -42,7 +42,7 @@
     <string name="managed_by">Managed by</string>
 
     <!-- Strings for the bug reporting screen -->
-    <string name="bug_report_title">Report a bug</string>
+    <string name="bug_report_title">报告一个 bug</string>
     <string name="bug_report_instructions_prefix">To report a bug,&#160;</string>
     <string name="bug_report_instructions_linktext">contact our support team&#160;</string>
     <string name="bug_report_instructions_suffix"> and include the identifier below.</string>
@@ -62,7 +62,7 @@
     <string name="exit_node_offline">出口节点已离线</string>
     <string name="running_exit_node">在此设备上运行</string>
     <string name="exit_node_offline_mdm_orgname"> %1$s 选择的出口节点现在处于离线状态， 网络连接将被阻断， 请联系网络管理员。</string>
-    <string name="exit_node_offline_mdm">The exit node selected by your organization is currently offline. Internet traffic is blocked. Contact a network administrator for help.</string>
+    <string name="exit_node_offline_mdm">你团队为你设置的出口节点目前已离线，网络连接将被阻断， 请联系网络管理员。</string>
     <string name="starting">正在启动...</string>
     <string name="connect_to_tailnet_prefix">"再次连接到Tailnet： "</string>
     <string name="connect_to_tailnet_suffix">" tailnet."</string>
@@ -152,36 +152,36 @@
 
     <!-- Strings for ExitNode picker -->
     <string name="choose_exit_node">选择出口节点</string>
-    <string name="choose_mullvad_exit_node">Mullvad exit nodes</string>
+    <string name="choose_mullvad_exit_node">Mullvad 出口节点</string>
     <string name="mullvad_exit_nodes" translatable="false">Mullvad VPN</string>
     <string name="best_available">Best available</string>
-    <string name="run_as_exit_node">声明自己是出口节点</string>
-    <string name="run_this_device_as_an_exit_node">Run as exit node?</string>
-    <string name="run_exit_node_explainer">Other devices in your tailnet will be able to route their internet traffic through this Android device. Make sure to approve this exit node in the admin console in order for other devices to see it.</string>
-    <string name="run_exit_node_caution">Running an exit node will severely impact battery life. On a metered data plan, significant cellular data charges may also apply. Always disable this feature when no longer needed.</string>
-    <string name="stop_running_as_exit_node">Stop running as exit node</string>
-    <string name="start_running_as_exit_node">Run as exit node</string>
-    <string name="running_as_exit_node">Now running as exit node</string>
-    <string name="run_exit_node_explainer_running">Other devices in your tailnet can now route their internet traffic through this Android device. Make sure to approve this exit node in the admin console in order for other devices to see it.</string>
+    <string name="run_as_exit_node">声明此设备为出口节点</string>
+    <string name="run_this_device_as_an_exit_node">要设置此设备为出口节点吗？</string>
+    <string name="run_exit_node_explainer">你的 Tailnet 内的其他设备将可以使用此 Android 设备路由自己的流量。要让其他设备发现此设备已作为出口节点运行，请在管理控制台授权。</string>
+    <string name="run_exit_node_caution">作为出口节点运行将严重影响此设备的电池续航。在按流量计费的网络上（如移动网络），这还将消耗你的流量。因此不需要此功能时请记得关闭。</string>
+    <string name="stop_running_as_exit_node">停止作为出口节点运行</string>
+    <string name="start_running_as_exit_node">声明此设备为出口节点</string>
+    <string name="running_as_exit_node">正在作为出口节点运行</string>
+    <string name="run_exit_node_explainer_running">你的 Tailnet 内的其他设备现在可以使用此 Android 设备路由自己的流量了。要让其他设备发现此设备已作为出口节点运行，请在管理控制台授权。</string>
     <string name="enabled">已启用</string>
     <string name="disabled">已禁用</string>
-    <string name="exit_node_mdm_orgname">%1$s requires you to use an exit node.</string>
-    <string name="exit_node_mdm">Your organization requires you to use an exit node.</string>
+    <string name="exit_node_mdm_orgname">%1$s 需要你使用一个出口节点。</string>
+    <string name="exit_node_mdm">你的团队需要你使用一个出口节点。</string>
 
     <!-- Strings for the tailnet lock screen -->
     <string name="tailnet_lock">Tailnet lock</string>
-    <string name="tailnet_lock_explainer">"Tailnet lock lets devices in your network verify public keys distributed by the coordination server before trusting them for connectivity. "</string>
-    <string name="tailnet_lock_enabled">Tailnet lock is currently enabled.</string>
-    <string name="tailnet_lock_disabled">Tailnet lock is currently not enabled.</string>
-    <string name="this_node_has_been_signed">This node has been signed by another device.</string>
-    <string name="this_node_has_not_been_signed">This node has not been signed by another device.</string>
-    <string name="this_node_is_trusted">This node is trusted to change the Tailnet lock configuration.</string>
-    <string name="this_node_is_not_trusted">This node is not trusted to change the Tailnet lock configuration.</string>
-    <string name="copy_to_clipboard">Copy to clipboard</string>
-    <string name="node_key">Node key</string>
-    <string name="tailnet_lock_key">Tailnet lock key</string>
-    <string name="node_key_explainer">Used to sign this node from another signing device in your tailnet.</string>
-    <string name="tailnet_lock_key_explainer">Used to authorize changes to the Tailnet lock configuration.</string>
+    <string name="tailnet_lock_explainer">"Tailnet lock 允许你网络中的设备在信任服务器分发的公钥用于连接之前，对其进行验证。"</string>
+    <string name="tailnet_lock_enabled">Tailnet lock 已启用</string>
+    <string name="tailnet_lock_disabled">Tailnet lock 未启用</string>
+    <string name="this_node_has_been_signed">此设备的密钥已被其他设备签名</string>
+    <string name="this_node_has_not_been_signed">此设备的密钥没有被其他设备签名</string>
+    <string name="this_node_is_trusted">此设备已被信任，可以修改 Tailnet lock 设置</string>
+    <string name="this_node_is_not_trusted">此设备未被信任，不能修改 Tailnet lock 设置</string>
+    <string name="copy_to_clipboard">复制到剪贴板</string>
+    <string name="node_key">节点密钥</string>
+    <string name="tailnet_lock_key">Tailnet lock 密钥</string>
+    <string name="node_key_explainer">用于从你的 Tailnet 中的另一个 签名设备 签署（验证）这个节点。</string>
+    <string name="tailnet_lock_key_explainer">用于授权对 Tailnet lock 配置的更改。</string>
 
     <!-- Strings for the bug report screen -->
     <string name="bug_report_id">Bug report ID</string>
@@ -192,14 +192,14 @@
     <string name="using_tailscale_dns">使用 Tailscale DNS</string>
     <string name="this_device_is_using_tailscale_to_resolve_dns_names">此设备正在使用 Tailscale 解析域名</string>
     <string name="resolvers">解析器</string>
-    <string name="search_domains">Search domains</string>
+    <string name="search_domains">搜索域</string>
     <string name="not_running">未运行</string>
-    <string name="tailscale_is_not_running_this_device_is_using_the_system_dns_resolver">Tailscale is not running. This device is using the system\'s DNS resolver.</string>
-    <string name="this_device_is_using_the_system_dns_resolver">This device is using the system DNS resolver.</string>
+    <string name="tailscale_is_not_running_this_device_is_using_the_system_dns_resolver">Tailscale 未运行。此设备正在使用系统DNS。</string>
+    <string name="this_device_is_using_the_system_dns_resolver">此设备正在使用系统DNS</string>
     <string name="not_using_tailscale_dns">不使用 Tailscale DNS</string>
     <string name="allow_lan_access">允许局域网访问</string>
-    <string name="countries">countries</string>
-    <string name="cities_available">cities available</string>
+    <string name="countries">国家</string>
+    <string name="cities_available">可用的城市</string>
 
     <!-- Strings for MDM Settings Manifest (app_restrictions.xml) -->
     <string name="prevents_the_user_from_disconnecting_tailscale">Prevents the user from disconnecting Tailscale.</string>
@@ -237,132 +237,132 @@
     <string name="onboarding_flow">Skip the Onboarding Flow</string>
 
     <!-- Permissions Management -->
-    <string name="permissions">Permissions</string>
-    <string name="permission_write_external_storage">Storage</string>
-    <string name="permission_write_external_storage_needed">We use storage in order to receive files with Taildrop.</string>
-    <string name="permission_post_notifications">Notifications</string>
-    <string name="permission_post_notifications_needed">We use notifications to help you troubleshoot broken connections, or notify you before you need to reauthenticate to your network. Persistent status notifications are off by default and can be enabled in system settings. </string>
-    <string name="open_notification_settings">Go to notification settings</string>
-    <string name="notification_settings_explanation">Persistent status notifications are off by default and can be enabled in system settings.</string>
-    <string name="taildrop_dir">Taildrop directory</string>
-    <string name="taildrop_dir_access">Taildrop directory access</string>
-    <string name="permission_taildrop_dir">Give Tailscale access to a folder in order to be able to download incoming files sent to you via Taildrop.</string>
-    <string name="dir_access">Directory access</string>
-    <string name="pick_dir">Pick a different directory</string>
+    <string name="permissions">权限</string>
+    <string name="permission_write_external_storage">存储权限</string>
+    <string name="permission_write_external_storage_needed">我们使用存储权限，用于存储来自 TailDrop 功能的文件</string>
+    <string name="permission_post_notifications">通知权限</string>
+    <string name="permission_post_notifications_needed">我们使用通知权限帮助你诊断出错的连接，或者通知你你需要重新认证以加入你的网络。实时通知用于显示 Tailsale 状态，默认关闭，可在系统通知设置中启用。</string>
+    <string name="open_notification_settings">打开系统通知设置</string>
+    <string name="notification_settings_explanation">实时通知用于显示 Tailsale 状态，默认关闭，可在系统通知设置中启用。</string>
+    <string name="taildrop_dir">Taildrop 目录</string>
+    <string name="taildrop_dir_access">Taildrop 目录权限</string>
+    <string name="permission_taildrop_dir">授予 Tailscale 访问某个文件夹的权限，以便能够下载通过 Taildrop 发送给你的传入文件。</string>
+    <string name="dir_access">目录权限</string>
+    <string name="pick_dir">使用另一个目录</string>
 
     <!-- Strings for the share activity -->
-    <string name="share">Send with Taildrop</string>
-    <string name="share_device_not_connected">Unable to share files with this device. This device is not currently connected to the tailnet.</string>
-    <string name="no_files_to_share">No files to share</string>
-    <string name="file_count">%1$s files</string>
-    <string name="connect_to_your_tailnet_to_share_files">Connect to your tailnet to share files.</string>
-    <string name="my_devices">My devices</string>
-    <string name="no_devices_to_share_with">There are no devices on your tailnet to share to</string>
-    <string name="taildrop_share_failed">Taildrop failed. Some files were not shared. Please try again.</string>
-    <string name="taildrop_sending">Sending</string>
-    <string name="taildrop_share_failed_short">Failed</string>
+    <string name="share">使用 Taildrop 发送</string>
+    <string name="share_device_not_connected">无法使用此设备发送，此设备尚未连接到 Tailnet 。</string>
+    <string name="no_files_to_share">没有要分享的文件</string>
+    <string name="file_count">%1$s 个文件</string>
+    <string name="connect_to_your_tailnet_to_share_files">连接你的 Tailnet 来分享文件</string>
+    <string name="my_devices">我的设备</string>
+    <string name="no_devices_to_share_with">你的 Tailnet 中没有可以作为目标的设备。</string>
+    <string name="taildrop_share_failed">Taildrop 失败了。部分文件没有被发送，请稍后重试。</string>
+    <string name="taildrop_sending">发送中</string>
+    <string name="taildrop_share_failed_short">发送失败</string>
 
 
     <!-- Error Dialog Titles -->
-    <string name="logout_failed_title">Logout failed</string>
-    <string name="switch_user_failed_title">Cannot switch to user</string>
-    <string name="add_profile_failed_title">Unable to add profile</string>
-    <string name="share_device_not_connected_title">Not connected</string>
-    <string name="taildrop_share_failed_title">Taildrop failed</string>
+    <string name="logout_failed_title">登出失败</string>
+    <string name="switch_user_failed_title">无法切换用户</string>
+    <string name="add_profile_failed_title">无法添加配置文件</string>
+    <string name="share_device_not_connected_title">未连接</string>
+    <string name="taildrop_share_failed_title">Taildrop 失败</string>
 
     <!-- Strings for the intro screen -->
-    <string name="getStarted">Get Started</string>
-    <string name="welcome1">Tailscale is a mesh VPN for securely connecting your devices.</string>
-    <string name="welcome2">All connections are device-to-device, so we never see your data. We collect and use your email address and name, as well as your device name, OS version, and IP address in order to help you to connect your devices and manage your settings. We log when you are connected to your network.</string>
-    <string name="scan_to_connect_to_your_tailnet">Scan this QR code to log in to your tailnet</string>
-    <string name="enter_code_to_connect_to_tailnet">or enter this code in the Machines > Add device section of the admin console: </string>
+    <string name="getStarted">开始吧！</string>
+    <string name="welcome1">Tailscale 是一个 mesh VPN 让你的设备可以安全连接网络。</string>
+    <string name="welcome2">所有数据都是点对点连接，因此我们无法看到你的数据。我们收集并使用您的电子邮件地址和姓名，以及您的设备名称、操作系统版本和 IP 地址，目的是帮助您连接设备和管理您的设置。我们会记录您连接到网络的时间</string>
+    <string name="scan_to_connect_to_your_tailnet">扫描这个二维码以登录到你的 Tailnet</string>
+    <string name="enter_code_to_connect_to_tailnet">或者在管理控制台的 设备 > 添加设备 页面输入这个代码：</string>
 
     <!-- Strings for intent handling -->
-    <string name="vpn_is_not_ready_to_start">VPN is not ready to start</string>
-    <string name="tailscale_is_not_setup">Tailscale is not setup</string>
-    <string name="no_peers_found">No peers found</string>
-    <string name="no_peers_with_name_found">No peers with name %1$s found</string>
-    <string name="multiple_peers_with_name_found">Multiple peers with name %1$s found</string>
-    <string name="peer_with_name_is_not_an_exit_node">Peer with name %1$s is not an exit node</string>
-    <string name="use_exit_node_intent_failed">Use Exit Node Intent Failed</string>
+    <string name="vpn_is_not_ready_to_start">VPN 没有准备就绪</string>
+    <string name="tailscale_is_not_setup">Tailscale 没有设置好</string>
+    <string name="no_peers_found">节点未找到</string>
+    <string name="no_peers_with_name_found">没有找到名为 %1$s 的节点</string>
+    <string name="multiple_peers_with_name_found">找到了多个名为 %1$s 的节点</string>
+    <string name="peer_with_name_is_not_an_exit_node">名为 %1$s 的节点不是出口节点</string>
+    <string name="use_exit_node_intent_failed">内部错误：无法设置出口节点</string>
 
     <!-- Strings for the IPNReceiver -->
-    <string name="title_connection_failed">Tailscale Connection Failed</string>
-    <string name="body_open_tailscale">Tap here to open Tailscale.</string>
+    <string name="title_connection_failed">Tailscale 连接失败</string>
+    <string name="body_open_tailscale">点击打开 Tailscale</string>
 
     <!-- Strings describing notification channels -->
-    <string name="taildrop_file_transfers">Taildrop file transfers</string>
-    <string name="vpn_status">VPN status</string>
-    <string name="vpn_start">VPN start</string>
-    <string name="notifications_delivered_when_user_interaction_is_required_to_establish_the_vpn_tunnel">Notifications delivered when user interaction is required to establish the VPN tunnel.</string>
-    <string name="optional_notifications_which_display_the_status_of_the_vpn_tunnel">Optional notifications which display the status of the VPN tunnel.</string>
-    <string name="notifications_delivered_when_a_file_is_received_using_taildrop">Notifications delivered when a file is received using Taildrop.</string>
-    <string name="health_channel_name">Errors and warnings</string>
-    <string name="health_channel_description">This notification category is used to deliver important status notifications and should be left enabled. For instance, it is used to notify you about errors or warnings that affect Internet connectivity.</string>
-    <string name="copy_ip_address">Copy IP Address</string>
+    <string name="taildrop_file_transfers">Taildrop 文件传送</string>
+    <string name="vpn_status">VPN 状态</string>
+    <string name="vpn_start">VPN 启动</string>
+    <string name="notifications_delivered_when_user_interaction_is_required_to_establish_the_vpn_tunnel">当建立 VPN 隧道需要用户交互时发送的通知</string>
+    <string name="optional_notifications_which_display_the_status_of_the_vpn_tunnel">显示 VPN 隧道状态的可选通知</string>
+    <string name="notifications_delivered_when_a_file_is_received_using_taildrop">使用 Taildrop 接收文件时发送的通知</string>
+    <string name="health_channel_name">错误和警告</string>
+    <string name="health_channel_description">此通知类别用于发送重要的状态通知，应保持启用。例如，它用于通知您有关影响互联网连接的错误或警告。</string>
+    <string name="copy_ip_address">复制IP地址</string>
     <string name="ping">Ping</string>
-    <string name="relayed_connection">Relayed connection (%1$s)</string>
-    <string name="direct_connection">Direct connection</string>
-    <string name="peer_relayed_connection">Peer relayed connection</string>
-    <string name="pinging_node_name">Pinging %1$s</string>
-    <string name="pingFailed">Ping failed</string>
-    <string name="an_unknown_error_occurred_please_try_again">An unknown error occurred. Please try again.</string>
-    <string name="request_timed_out_make_sure_that_is_online">Request timed out. Make sure that \'%1$s\' is online.</string>
-    <string name="split_tunneling">App split tunneling</string>
-    <string name="exclude_certain_apps_from_using_tailscale">Exclude certain apps from using Tailscale</string>
-    <string name="selected_apps_will_access_the_internet_directly_without_using_tailscale">Apps selected here will access the Internet directly, without using Tailscale.</string>
-    <string name="count_excluded_apps">Excluded apps (%1$s)</string>
-    <string name="certain_apps_are_not_routed_via_tailscale">Certain apps are not routed via Tailscale on this device. This setting is managed by your organization and cannot be changed by you. For more information, contact your network administrator.</string>
-    <string name="only_specific_apps_are_routed_via_tailscale">Only specific apps are routed via Tailscale on this device. This setting is managed by your organization and cannot be changed by you. For more information, contact your network administrator.</string>
-    <string name="specifies_a_list_of_apps_that_will_be_excluded_from_tailscale_routes_and_dns_even_when_tailscale_is_running_all_other_apps_will_use_tailscale">Specifies a list of apps that will be excluded from Tailscale routes and DNS even when Tailscale is running. All other apps will use Tailscale.</string>
-    <string name="specifies_a_list_of_apps_that_will_always_use_tailscale_routes_and_dns_when_tailscale_is_running_all_other_apps_won_t_use_tailscale_if_this_value_is_non_empty">Specifies a list of apps that will always use Tailscale routes and DNS when Tailscale is running. All other apps won\'t use Tailscale if this value is non-empty.</string>
-    <string name="included_packages">Included packages</string>
-    <string name="excluded_packages">Excluded packages</string>
+    <string name="relayed_connection">使用 %1$s 中继的连接</string>
+    <string name="direct_connection">P2P直接连接</string>
+    <string name="peer_relayed_connection">节点通过中继连接</string>
+    <string name="pinging_node_name">正在Ping %1$s</string>
+    <string name="pingFailed">Ping 失败了</string>
+    <string name="an_unknown_error_occurred_please_try_again">未知错误！请稍后重试</string>
+    <string name="request_timed_out_make_sure_that_is_online">请求超时，请确认 \'%1$s\' 是否在线</string>
+    <string name="split_tunneling">选择VPN将用于哪些应用</string>
+    <string name="exclude_certain_apps_from_using_tailscale">已选的应用将不能使用 Tailscale</string>
+    <string name="selected_apps_will_access_the_internet_directly_without_using_tailscale">已选的应用将直接连接互联网，不经过 Tailscale</string>
+    <string name="count_excluded_apps">已排除应用 (%1$s)</string>
+    <string name="certain_apps_are_not_routed_via_tailscale">此设备上的某些应用不会通过 Tailscale 路由。此设置由您的组织管理，您无法更改。如需更多信息，请联系您的网络管理员。</string>
+    <string name="only_specific_apps_are_routed_via_tailscale">此设备上只有特定的应用会通过 Tailscale 路由。此设置由您的组织管理，您无法更改。如需更多信息，请联系您的网络管理员。</string>
+    <string name="specifies_a_list_of_apps_that_will_be_excluded_from_tailscale_routes_and_dns_even_when_tailscale_is_running_all_other_apps_will_use_tailscale">指定一个应用列表，即使 Tailscale 正在运行，这些应用也会被排除在 Tailscale 路由和 DNS 之外。所有其他应用将使用 Tailscale。</string>
+    <string name="specifies_a_list_of_apps_that_will_always_use_tailscale_routes_and_dns_when_tailscale_is_running_all_other_apps_won_t_use_tailscale_if_this_value_is_non_empty">指定一个应用列表，当 Tailscale 运行时，这些应用将始终使用 Tailscale 路由和 DNS。如果此值非空，所有其他应用将不会使用 Tailscale。</string>
+    <string name="included_packages">已包含的应用</string>
+    <string name="excluded_packages">已排除的应用</string>
 
     <!-- Strings for the Mullvad info view -->
-    <string name="enable_in_the_admin_console">Enable in the admin console</string>
-    <string name="mullvad_info_explainer">Once you enable Mullvad VPN on the admin console, you\'ll be able to encrypt and route your traffic using Mullvad’s global network of servers as exit nodes.</string>
-    <string name="mullvad_info_title">Mullvad VPN is not configured</string>
-    <string name="the_mullvad_vpn_logo">The Mullvad VPN logo</string>
-    <string name="health_warnings">Health warnings</string>
-    <string name="no_issues_found">No issues found</string>
-    <string name="tailscale_is_operating_normally">Tailscale is operating normally.</string>
+    <string name="enable_in_the_admin_console">在管理控制台中启用</string>
+    <string name="mullvad_info_explainer">一旦您在管理控制台上启用 Mullvad VPN，您就可以使用 Mullvad 的全球服务器网络作为出口节点，来加密和路由您的流量。</string>
+    <string name="mullvad_info_title">Mullvad VPN 未设置</string>
+    <string name="the_mullvad_vpn_logo">Mullvad VPN 的 logo</string>
+    <string name="health_warnings">来自状态检测的警告</string>
+    <string name="no_issues_found">没有发现问题</string>
+    <string name="tailscale_is_operating_normally">Tailscale 正常运作！</string>
 
     <!-- Strings for the multiple VPNs dialog -->
-    <string name="vpn_permission_denied">VPN permission denied</string>
-    <string name="multiple_vpn_explainer">Only one VPN can be active, and it appears another is already running. Before starting Tailscale, disable the other VPN.</string>
-    <string name="go_to_settings">Go to Settings</string>
-    <string name="subnet_routes">Subnet routes</string>
-    <string name="run_as_subnet_router_header">Advertise routes to machines that are not running Tailscale to make them available in your tailnet. Routes must be approved in the admin console.</string>
-    <string name="open_kb_article">Open KB Article</string>
-    <string name="delete_route">Delete route</string>
-    <string name="edit_route">Edit route</string>
-    <string name="enter_valid_route">Enter an IPv4 or IPv6 route in CIDR format.</string>
-    <string name="advertised_routes">Advertised routes</string>
-    <string name="no_advertised_routes">No advertised routes</string>
-    <string name="add_new_route">Add route</string>
-    <string name="invalid_route">Invalid route</string>
-    <string name="valid_route">Valid route</string>
+    <string name="vpn_permission_denied">VPN 权限被拒绝</string>
+    <string name="multiple_vpn_explainer">只能有一个 VPN 处于活动状态，并且似乎另一个 VPN 正在运行。在启动 Tailscale 之前，请禁用另一个 VPN。</string>
+    <string name="go_to_settings">打开系统设置</string>
+    <string name="subnet_routes">子网路由</string>
+    <string name="run_as_subnet_router_header">通告到未运行 Tailscale 的机器的路由，以便在你的 Tailnet 中使其可用。路由必须在管理控制台中获得批准。</string>
+    <string name="open_kb_article">打开 KB Article</string>
+    <string name="delete_route">删除路由</string>
+    <string name="edit_route">编辑路由</string>
+    <string name="enter_valid_route">输入一个 IPv4 或 IPv6 路由，使用 CIDR 格式</string>
+    <string name="advertised_routes">已通告的路由</string>
+    <string name="no_advertised_routes">没有已通告的路由</string>
+    <string name="add_new_route">添加路由</string>
+    <string name="invalid_route">非法路由</string>
+    <string name="valid_route">有效的路由</string>
     <string name="route_help_text">e.g. 192.168.1.0/24</string>
-    <string name="run_as_subnet_router">Run as subnet router</string>
-    <string name="use_tailscale_subnets_subtitle">Route traffic according to your network\'s rules. Some networks require this to access IP addresses that don\'t start with 100.x.y.z.</string>
-    <string name="subnet_routing">Subnet routing</string>
-    <string name="specifies_a_device_name_to_be_used_instead_of_the_automatic_default">Specifies a device name to be used instead of the automatic default.</string>
-    <string name="hostname">Hostname</string>
-    <string name="failed_to_save">Failed to save</string>
+    <string name="run_as_subnet_router">作为子网路由设备运行</string>
+    <string name="use_tailscale_subnets_subtitle">根据您的网络规则路由流量。某些网络要求这样做才能访问不以 100.x.y.z 开头的 IP 地址。</string>
+    <string name="subnet_routing">子网路由</string>
+    <string name="specifies_a_device_name_to_be_used_instead_of_the_automatic_default">设置一个主机名，而不是使用默认的。</string>
+    <string name="hostname">主机名</string>
+    <string name="failed_to_save">无法保存</string>
 
     <!-- Strings for fallback VPN dialog -->
-    <string name="vpn_permission_needed">VPN permission needed</string>
-    <string name="vpn_explainer">Tailscale needs VPN access, but it looks like your device may not show VPN settings. If you are using another VPN app or have work policies, disable them first, then try again.</string>
+    <string name="vpn_permission_needed">需要 VPN 权限</string>
+    <string name="vpn_explainer">Tailscale 需要 VPN 访问权限，但您的设备似乎没有显示 VPN 设置。如果您正在使用另一个 VPN 应用程序或有工作策略（限制），请先禁用它们，然后重试。</string>
 
     <!-- Strings for the taildrop directory picker interstitial -->
-    <string name="taildrop_directory_picker_title">Taildrop Directory</string>
-    <string name="taildrop_directory_picker_body">You have not selected a directory for incoming taildrop transfers. Please select or create a target directory.</string>
-    <string name="taildrop_directory_picker_info">What is taildrop?</string>
-    <string name="taildrop_directory_picker_button">Open Directory Picker</string>
+    <string name="taildrop_directory_picker_title">Taildrop 目录</string>
+    <string name="taildrop_directory_picker_body">您尚未为传入的 Taildrop 传输选择目录。请选择或创建一个目标目录。</string>
+    <string name="taildrop_directory_picker_info">什么是 Taildrop ？</string>
+    <string name="taildrop_directory_picker_button">打开系统文件选择器</string>
 
     <!-- Strings for Hardware Attestation MDM setting -->
-    <string name="enable_hardware_attestation">Enable hardware attestation</string>
-    <string name="use_hardware_backed_keys_to_bind_node_identity_to_the_device">Use hardware-backed keys to bind node identity to the device</string>
+    <string name="enable_hardware_attestation">启用硬件加密</string>
+    <string name="use_hardware_backed_keys_to_bind_node_identity_to_the_device">使用硬件支持的密钥将节点身份绑定到设备。</string>
 
 </resources>
