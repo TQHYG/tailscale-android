@@ -6,7 +6,11 @@ on:
       - main
       - "release-branch/*"
   pull_request:
-    # all PRs on all branches
+  workflow_dispatch:
+
+# 必须添加权限配置，允许 Action 创建 Release 和上传文件
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -17,21 +21,44 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        
       - uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b # v5.4.0
         with:
           go-version-file: "go.mod"
-      - name: Switch to Java 17 # Note: 17 is pre-installed on ubuntu-latest
+          
+      - name: Switch to Java 17
         uses: actions/setup-java@3a4f6e1af504cf6a31855fa899c6aa5355ba6c12 # v4.7.0
         with:
           distribution: "temurin"
           java-version: "17"
 
-      # Clean should essentially be a no-op, but make sure that it works.
       - name: Clean
         run: make clean
 
       - name: Build APKs
+        # 假设 make 命令会在当前目录或特定目录生成 .apk 文件
         run: make tailscale-debug.apk
 
       - name: Run tests
         run: make test
+
+      # --- 新增步骤 1: 上传为 Artifact ---
+      # 即使 Release 失败，你也可以在 Actions 的 Summary 页面找到这个压缩包
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tailscale-debug-apk
+          path: ./*.apk
+          retention-days: 7 # 文件保留7天
+
+      # --- 新增步骤 2: 发布到 GitHub Release (Pre-release) ---
+      # 仅在推送到 main 分支时运行，避免 PR 触发发布
+      - name: Update Nightly Release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: nightly
+          name: Nightly Build
+          body: "Latest development build from main branch."
+          prerelease: true 
+          files: ./*.apk
